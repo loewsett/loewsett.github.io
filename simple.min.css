@@ -72,18 +72,11 @@ a{
     padding: 2px 16px;
 }
 
-.newscontainer {
-    padding: 1px 1px;
-}
-
 .dropbtn {
     background-color: #f5f4ef;
-    color: black;
+    color: rgb(167, 63, 63);
     font-family: 'SteelfishRounded';
-    font-size: 100px;
-    border: none;
-    cursor: pointer;
-    position: left;
+    font-size: 60px;
   }
   
   /* The container <div> - needed to position the dropdown content */
