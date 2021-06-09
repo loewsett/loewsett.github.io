@@ -12,6 +12,7 @@ h3{
 
 h4{
     font-family:'Yanone Kaffeesatz Regular';
+    font-size:40px;
 }
 
 h2{
@@ -39,8 +40,18 @@ a{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 100%;
-  }
+}
+
+.newscard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+}
   
-  .container {
+.container {
     padding: 2px 16px;
-  }
+}
+
+.newscontainer {
+    padding: 1px 1px;
+}
