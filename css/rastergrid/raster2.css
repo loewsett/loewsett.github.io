@@ -39,6 +39,10 @@ p, h1 {
   padding-right: 30%;
 }
 
+.latest-card {
+  padding-left: 50%;
+}
+
 .link-right {
   float: right;
 }
