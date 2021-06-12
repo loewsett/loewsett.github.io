@@ -43,6 +43,11 @@ p, h1 {
   padding-left: 50%;
 }
 
+.category-card {
+  width: 48%;
+  display:inline-block;
+}
+
 .link-right {
   float: right;
 }
