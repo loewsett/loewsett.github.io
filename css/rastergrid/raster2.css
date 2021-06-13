@@ -37,10 +37,16 @@ p, h1 {
 
 .article-card {
   padding-right: 30%;
+  width:100%;
 }
 
 .latest-card {
-  padding-left: 50%;
+  padding-right: 50%;
+}
+
+.news-card {
+  width: 48%;
+  display:inline-block;
 }
 
 .category-card {
@@ -280,4 +286,31 @@ p, h1 {
 }
 .pb-3 {
   padding-bottom: 3rem;
+}
+
+#postInput {
+  font-size: larger;
+  padding: 1% 2% 1% 2%; /* Add some padding */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#postUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#postUL li a {
+  text-align: left;
+  margin-top: -1px; /* Prevent double borders */
+  padding-top: 12px; /* Add some padding */
+  padding-bottom: 12px;
+  text-decoration: none; /* Remove default text underline */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#postUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
 }

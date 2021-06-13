@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Loew Sett</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/rastergrid/raster2.css?v=20">
+  <style>
+
+r-grid > r-cell {
+  border: 1px solid black;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+body > r-grid > r-cell {
+  padding: 2rem;
+}
+
+</style>
+</head>
+<body>
+  <h1>
+    <a href='index.html'>
+      Loew Sett<br>
+    </a>
+    ————–<br>
+    <div class='link-left'>
+      SEARCH POSTS
+    </div>
+  </h1>
+  <br><br>
+
+  <input type="text" id="postInput" onkeyup="myFunction()" placeholder="Search for Posts" title="type in a post name">
+
+<ul id="postUL">
+  <h2>
+    <li><a href="index.html">Planning your final summer trip</a></li>
+    <li><a href="index.html">Planning 123123</a></li>
+
+    <li><a href="index.html">Planning 1234</a></li>
+    <li><a href="index.html">Planning your final summer trip</a></li>
+
+    <li><a href="index.html">Planning your final summer trip</a></li>
+    <li><a href="index.html">Planning your final summer trip</a></li>
+    <li><a href="index.html">Planning your final summer trip</a></li>
+  </h2>
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("postInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("postUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+  <a href="./" style="margin-left:-0.15rem">&larr; Back to nothing</a>
+
+  <section id="extras" class="body">
+    <div class="blogroll">
+            <h2>links</h2>
+            <ul>
+                <li><a href="https://google.com/">Loew Sett Youtube</a></li>
+                <li><a href="https://google.com/">Support Us</a></li>
+            </ul>
+    </div><!-- /.blogroll -->
+    <div class="social">
+            <h2>follow</h2>
+            <ul>
+                <li><a href="https://twitter.com/">@loewsett</a></li>
+                <li><a href="https://twitter.com/">@cherry</a></li>
+                <li><a href="https://github.com/">github</a></li>
+            </ul>
+    </div><!-- /.social -->
+</section><!-- /#extras -->
+
+
+</body>
+</html>
