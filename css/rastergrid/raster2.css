@@ -15,6 +15,13 @@ p, h1 {
   margin: 0; padding: 0;
 }
 
+.p2 {
+  font-family: Helvetica;
+  line-height: 27px;
+  margin: 0; padding: 0;
+  font-size: 22px;
+}
+
 
 
 .text-uppercase {
@@ -47,6 +54,19 @@ p, h1 {
 .news-card {
   width: 48%;
   display:inline-block;
+}
+
+.articletext {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+#articleimage {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
 }
 
 .category-card {
@@ -306,6 +326,7 @@ p, h1 {
   margin-top: -1px; /* Prevent double borders */
   padding-top: 12px; /* Add some padding */
   padding-bottom: 12px;
+  font-size: large;
   text-decoration: none; /* Remove default text underline */
   color: black; /* Add a black text color */
   display: block; /* Make it into a block element to fill the whole list */
