@@ -21,6 +21,13 @@ p, h1 {
   margin: 0; padding: 0;
 }
 
+.header {
+  padding: 1%;
+  background: black;
+  color: white;
+  font-size: 30px;
+}
+
 @media screen and (min-width:701px){
   body {
     padding-left: 25%;
