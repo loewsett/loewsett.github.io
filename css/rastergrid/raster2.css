@@ -50,6 +50,10 @@ figcaption {
   text-align: center;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 @media screen and (min-width:1025px){
   body {
     padding-left: 25%;
