@@ -1,11 +1,29 @@
+
+@font-face {
+    font-family: VollkomSBItalic;
+    src: url("../fonts/VollkornSemiboldItalic-x3oLO.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "VollkomBold";
+    src: url("../fonts/VollkornBold.woff") format('woff');
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "VollkomBold";
+}
+
 @media screen and (max-width: 768px) {
     .bodyelements {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
     }
 
     .headerimage {
-        padding-left: 37.5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 25%;
         text-align: center;
     }
@@ -18,6 +36,15 @@
         top: 0;
         background-color: white;
     }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        border-style: dotted;
+        border-width: 1px; 
+        border-color: black;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -27,7 +54,9 @@
     }
 
     .headerimage {
-        padding-left: 43.75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         width: 12.5%;
         text-align: center;
     }
@@ -40,4 +69,23 @@
         top: 0;
         background-color: white;
     }
+
+    .topcontainer {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        border-style: dotted;
+        border-width: 1px; 
+        border-color: black;
+        width: 50%;
+    }
+}
+  
+.container {
+    padding: 2px 16px;
 }
