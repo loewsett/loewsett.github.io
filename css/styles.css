@@ -10,6 +10,11 @@
     font-weight: bold;
 }
 
+@font-face {
+    font-family: "GeorgiaImport";
+    src: url("../fonts/Georgia.woff") format('woff');
+}
+
 h2 {
     font-family: "VollkomBold";
 }
