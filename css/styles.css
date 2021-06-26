@@ -1,26 +1,33 @@
-
-@font-face {
-    font-family: VollkomSBItalic;
-    src: url("../fonts/VollkornSemiboldItalic-x3oLO.otf") format("opentype");
-}
-
-@font-face {
-    font-family: "VollkomBold";
-    src: url("../fonts/VollkornBold.woff") format('woff');
-    font-weight: bold;
-}
-
 @font-face {
     font-family: "Georgia";
     src: url("../fonts/Georgia.woff") format('woff');
 }
 
+@font-face {
+    font-family: "Klarissa";
+    src: url("../fonts/Klarissa.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Abril Fatface";
+    src: url("../fonts/AbrilFatface-Regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Brunel Deck";
+    src: url("../fonts/BrunelDeck-Semibold.woff") format('woff');
+}
+
 h2 {
-    font-family: "VollkomBold";
+    font-family: "Brunel Deck";
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .logotext {
-    font-family: "Georgia";
+    font-family: "Klarissa";
     font-size: 30px;
     fill: #006837;
 }
@@ -71,8 +78,8 @@ h2 {
 
 @media screen and (min-width: 769px) {
     .bodyelements {
-        padding-left: 25%;
-        padding-right: 25%;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
     }
 
     .headerimage {
@@ -93,7 +100,7 @@ h2 {
     }
 
     .topcontainer {
-        width:50%;
+        width:37.5%;
         display: block;
         margin-left: auto;
         margin-right: auto;
