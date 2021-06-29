@@ -32,6 +32,12 @@ body {
     fill: #006837;
 }
 
+.headtext {
+    font-family: "Klarissa";
+    font-size: 18px;
+    fill: #006837;
+}
+
 .cl-2 {
     fill: #006837;
 }
@@ -67,24 +73,19 @@ body {
         margin-right: auto;
     }
 
+    .articlecontainer {
+        width:100%;
+        padding-bottom: 2.5%;
+        margin-bottom: 2%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .card {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-    }
-
-    .storiescard {
-        width: 100%;
-        display: block;
-        padding-bottom: 2.5%;
-    }
-
-    .normalcard {
-        width: 100%;
-        padding-bottom: 2.5%;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
     }
 }
 
@@ -92,6 +93,15 @@ body {
     .bodyelements {
         padding-left: 12.5%;
         padding-right: 12.5%;
+    }
+
+    .articlecontainer {
+        width:100%;
+        padding-bottom: 2.5%;
+        margin-bottom: 2%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .headerimage {
@@ -128,18 +138,6 @@ body {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-    }
-
-    .storiescard {
-        width: 31.25%;
-        display: block;
-    }
-
-    .normalcard {
-        width: 50%;
-        padding-right: 50%;
-        padding-bottom: 2.5%;
-        display: inline-block;
     }
 }
   
