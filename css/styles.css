@@ -50,6 +50,11 @@ body {
         padding-right: 2.5%;
     }
 
+    .articleelements {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
     .borderdivision {
         border: 2px #006837 solid; 
         width: 100%; 
@@ -122,12 +127,23 @@ body {
         color: #006837;
         display: inline-block;
     }
+
+    .articletitle h2
+    {
+        text-align: left;
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width: 769px) {
     .bodyelements {
         padding-left: 12.5%;
         padding-right: 12.5%;
+    }
+
+    .articleelements {
+        padding-left: 18.75%;
+        padding-right: 18.75%;
     }
 
     .borderdivision {
@@ -205,6 +221,12 @@ body {
         font-family: "Coolvetica";
         font-size: 70px;
         text-align: center;
+    }
+
+    .articletitle h2
+    {
+        text-align: left;
+        font-size: 50px;
     }
 }
   
