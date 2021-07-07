@@ -44,7 +44,16 @@ body {
     border-radius: 4px;
 }
 
-p:first-letter {
+.articletext p:first-letter {
+    float: left;
+    font-size: 65px;
+    color:#006837;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 9px;
+}
+
+.highcontainer p:first-letter {
     float: left;
     font-size: 65px;
     color:#006837;
@@ -114,10 +123,17 @@ a { color: inherit; }
         margin-right: auto;
     }
 
-    .articlecontainer {
+    .articleleft {
         width:100%;
         padding-bottom: 2.5%;
-        margin-bottom: 2%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .articleright {
+        width:100%;
+        padding-bottom: 2.5%;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -203,11 +219,22 @@ a { color: inherit; }
         text-align: left;
     }
 
-    .articlecontainer {
-        width:100%;
+    .articleleft {
+        width:35%;
+        padding-left: 12.5%;
+        float: left;
         padding-bottom: 2.5%;
-        margin-bottom: 2%;
-        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .articleright {
+        width:35%;
+        padding-left: 5%;
+        padding-right: 12.5%;
+        display: inline-block;
+        padding-bottom: 2.5%;
+        display: inline-block;
         margin-left: auto;
         margin-right: auto;
     }
@@ -250,11 +277,6 @@ a { color: inherit; }
         margin-right: auto;
     }
 
-    .articlecontainer {
-        width:37.5%;
-        display: block;
-    }
-
     .card {
         margin-left: auto;
         margin-right: auto;
@@ -293,26 +315,4 @@ a { color: inherit; }
     padding: 12px 20px 12px 40px;
     border: 1px solid #ddd;
     margin-bottom: 12px;
-}
-  
-#articlelist {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-  
-#articlelist li a {
-    border: 1px solid #ddd;
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    font-family:'Coolvetica';
-    color: black;
-    display: block
-}
-  
-#articlelist li a:hover:not(.header) {
-    background-color: #eee;
 }
