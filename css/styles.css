@@ -123,6 +123,11 @@ a { color: inherit; }
         margin-right: auto;
     }
 
+    .card img 
+    {
+        width:100%;
+    }
+
     .articleleft {
         width:100%;
         padding-bottom: 2.5%;
@@ -140,6 +145,12 @@ a { color: inherit; }
     }
 
     .card {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .specialcard {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -184,8 +195,8 @@ a { color: inherit; }
 
 @media screen and (min-width: 769px) {
     .bodyelements {
-        padding-left: 12.5%;
-        padding-right: 12.5%;
+        padding-left: 6.25%;
+        padding-right: 6.25%;
     }
 
     footer {
@@ -277,10 +288,47 @@ a { color: inherit; }
         margin-right: auto;
     }
 
+    .articlecontainerl
+    {
+        float:left;
+        width: 25%; 
+        padding-left: 12.5%;
+    }
+
+    .articlecontainerr
+    {
+        display: inline-block;
+        width: 25%; 
+        padding-right: 20%;
+        padding-left: 2%;
+    }
+
+    .card img 
+    {
+        width:50%;
+        float:right;
+    }
+
     .card {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
+    }
+
+    .specialcard {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .specialcard .highcontainer p::first-letter
+    {
+        display: inline-block;
+        font-size: 20px;
+        color:black;
+        line-height: 1;
+        font-weight: normal;
+        margin-right: 0px;
     }
 
     h2 {
