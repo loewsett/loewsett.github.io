@@ -18,6 +18,11 @@
     src: url("../fonts/coolvetica.woff") format('woff');
 }
 
+@font-face {
+    font-family: "Slenco";
+    src: url("../fonts/slencoblack.woff") format('woff');
+}
+
 a h2
 {
     text-decoration: none;
@@ -191,6 +196,14 @@ a { color: inherit; }
     .searchbox {
         width:100%;
     }
+
+    .spechighcontainer a h2 
+    {
+        text-align: left;
+        color: white;
+        padding-left: 5%; 
+        padding-top: 25%;
+    }
 }
 
 @media screen and (min-width: 769px) {
@@ -341,6 +354,20 @@ a { color: inherit; }
     {
         text-align: center;
         font-size: 50px;
+    }
+
+    .spechighcontainer a h2 
+    {
+        text-align: left;
+        color: white;
+        padding-left: 5%; 
+        padding-top: 15%;
+        margin-bottom: 2.5%;
+    }
+
+    .toptag
+    {
+        padding-bottom: 5%;
     }
 }
   
