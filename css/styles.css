@@ -155,6 +155,27 @@ a { color: inherit; }
         width: 100%;
     }
 
+    .articlecontainerl
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; 
+    }
+
+    .articlecontainer2
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; 
+    }
+
+    .articlecontainer3
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; 
+    }
+
     .specialcard {
         margin-left: auto;
         margin-right: auto;
@@ -303,9 +324,24 @@ a { color: inherit; }
 
     .articlecontainerl
     {
+        margin-left: 12.5%;
         float:left;
-        width: 25%; 
-        padding-left: 12.5%;
+        width: 23.5%; 
+    }
+
+    .articlecontainer2
+    {
+        margin-left: 2.25%;
+        display: inline-block;
+        width: 23.5%; 
+    }
+
+    .articlecontainer3
+    {
+        float: right; 
+        margin-left: 1.5%; 
+        margin-right: 12.5%; 
+        width: 23.5%;
     }
 
     .articlecontainerr
@@ -326,22 +362,6 @@ a { color: inherit; }
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-    }
-
-    .specialcard {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%;
-    }
-
-    .specialcard .highcontainer p::first-letter
-    {
-        display: inline-block;
-        font-size: 20px;
-        color:black;
-        line-height: 1;
-        font-weight: normal;
-        margin-right: 0px;
     }
 
     h2 {
