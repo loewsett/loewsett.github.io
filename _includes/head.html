@@ -1,37 +1,37 @@
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  {% seo title=false %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-      {% if page.tag or page.title %}
-        {% if page.tag %}
-          {{ page.tag | escape }}
+    <title>
+        {% if page.title == "Home" %}
+            {{ site.title }} | {{ site.description }}
         {% else %}
-          {{ page.title | escape }}
-        {% endif %}
-        -
+            {{ page.title }} | {{ site.title }}
       {% endif %}
-      {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
-        Page {{ paginator.page }} of {{ paginator.total_pages }} -
-      {% endif %}
-      {{ site.title | escape }}
-      {% unless page.tag or page.title %}
-        - {{ site.description | escape }}
-      {% endunless %}
     </title>
-  
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
-  <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
-      
-  <style>
-    {% capture include_to_scssify %}
-      {% include inline.scss %}
-    {% endcapture %}
-    {{ include_to_scssify | scssify }}
-  </style>
+    <meta name="description" content="
+     {% if page.description %}{{ page.description }}
+     {% else %}{{ site.description }}
+    {% endif %}">
 
-</head>
+    <!-- LINK TO ATOM FEED FOR SEO -->
+    <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/feed.xml" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="{{"assets/favicon.ico" | relative_url }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{"assets/favicon.ico" | relative_url }}" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | relative_url }}">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <!-- SEO Plugin -->
+    {% seo %}
+
+    <!-- Google Analytics -->
+    {% if site.data.settings.analytics-id%}
+        {%- include analytics.html -%}
+    {% endif %}
+    <!-- End Google Analytics -->

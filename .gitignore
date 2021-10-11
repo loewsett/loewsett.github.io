@@ -1,7 +1,11 @@
-tmp
-*.rdb
-.env
-.sass-cache
-.DS_Store
+*.gem
+.bundle
 .jekyll-cache
-.git
+.sass-cache
+_site
+/_site
+Gemfile.lock
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
